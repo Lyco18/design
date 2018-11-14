@@ -5,8 +5,8 @@
  * to style up the website so it is useable.
  */
 
-@import url("https://fonts.google.com/specimen/Playfair+Display");
-@import url("https://fonts.google.com/specimen/Archivo");
+@import url("https://fonts.googleapis.com/css?family=Muli|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Muli");
 
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
@@ -20,7 +20,7 @@
 
 html {
     font-size: 100%;
-    font-family: "Archivo";
+    font-family: "Muli";
     color: #333;
     overflow-y: scroll;
 }
@@ -29,10 +29,11 @@ body {
     background-image: linear-gradient(to bottom, #fff, #ffcba4);
 }
 
-@media (min-width 64em) {
-  html {
-      font-size: 112.5%;
-  }
+@media (max-width 980px) {
+    body {
+        width: auto;
+        background-color: white;
+    }
 }
 
 p {
@@ -47,6 +48,7 @@ form {
     margin-bottom: 25px;
     width: 980px;
 }
+
 .figure.right {
     float: right;
 }
@@ -54,12 +56,11 @@ form {
 .region-flash,
 .inner-wrap-main {
     background-color: rgba(255, 255, 255, 0.5);
-    width: 1100px;
+    width: auto;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 8px;
 }
-
-
 
 .row::after {
     content: "";
@@ -116,7 +117,7 @@ form {
 
 .region-header-col-2 {
     padding-top: 10px;
-    font-family: "Playfair";
+    font-family: "Muli";
     float: right;
 }
 
@@ -206,7 +207,7 @@ form {
     margin-top: 15px;
     width: 33%;
     float: left;
-    font-family: "Archivo";
+    font-family: "Muli";
 }
 
 .footer-column p {
@@ -231,6 +232,6 @@ form {
 .byline {
     clear: both;
     margin-top: 1.5em;
-    font-family: "Archivo";
+    font-family: "Muli";
     border-top: 2px solid #ffcba4;
 }
