@@ -1,3 +1,4 @@
-#### Redovisa på GitHub
+#### Lydias github
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+Här hittar ni in på
+<a href="https://github.com/Lyco18/design">Lydias GITHUB!</a>

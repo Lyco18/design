@@ -19,8 +19,6 @@ views:
 Om
 =========================
 
-<a href="https://github.com/dbwebb-se/design">GITHUB DESIGN</a>
+Det här är en sida skapad av DBWEBB i samband med kursen design på Blekinge Tekniska Högskola. Ni hittar kursen på <a href="https://dbwebb.se/kurser/design-v2">dbwebbs hemsida.</a>
 
-Det här är en sida skapad av DBWEBB i samband med kursen design på Blekinge Tekniska Högskola. Ni hittar kursen på dbwebbs hemsida, <a href="https://dbwebb.se/kurser/design-v2">här.</a>
-
-[FIGURE src=image/design.jpg?w=350 caption="En design bild."]
+Den här sidan är skapad i ett lärande syfte och som ett test objekt för studenter på bth. 

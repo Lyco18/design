@@ -5,6 +5,9 @@
  * to style up the website so it is useable.
  */
 
+@import url("https://fonts.google.com/specimen/Playfair+Display");
+@import url("https://fonts.google.com/specimen/Archivo");
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -13,4 +16,221 @@
 /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
     display: none;
+}
+
+html {
+    font-size: 100%;
+    font-family: "Archivo";
+    color: #333;
+    overflow-y: scroll;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #fff, #ffcba4);
+}
+
+@media (min-width 64em) {
+  html {
+      font-size: 112.5%;
+  }
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+form {
+    margin-bottom: 25px;
+    width: 980px;
+}
+.figure.right {
+    float: right;
+}
+
+.region-flash,
+.inner-wrap-main {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1100px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.block.toc li {
+    list-style-type: none;
+}
+
+.block.toc ul {
+    padding-left: 0;
+}
+
+.block.toc li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.block.toc li a:hover {
+    text-decoration: underline;
+}
+
+.region-breadcrumb li {
+    display: none;
+}
+
+.site-logo-text {
+    font-size: 2em;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    color: #333;
+}
+
+.site-logo-text a:hover {
+    text-decoration: underline;
+}
+
+.region-header-col-1 {
+    padding-top: 10px;
+    float: left;
+    font-family: "Playfair";
+}
+
+.region-header-col-2 {
+    padding-top: 10px;
+    font-family: "Playfair";
+    float: right;
+}
+
+.my-navbar {
+    list-style-type: none;
+}
+
+.my-navbar li {
+    display: inline;
+    box-sizing: border-box;
+    padding: 0 1em;
+}
+
+.my-navbar li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.my-navbar li a:hover {
+    text-decoration: underline;
+}
+
+.inner-wrap-flash img {
+    max-width: 100%;
+}
+
+.has-sidebar-right,
+.region-sidebar-left {
+    width: 580px;
+    float: left;
+}
+
+.next-previous {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 4px 2em;
+}
+
+.next a,
+.previous a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.next a:hover,
+.previous a:hover {
+    text-decoration: underline;
+}
+
+.previous {
+    margin-right: auto;
+}
+
+.wrap-sidebar {
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.region-sidebar-right {
+    float: right;
+    margin-top: 20px;
+}
+
+.block {
+    margin-bottom: 3em;
+}
+
+.block h4 {
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.block p {
+    margin-top: 3px;
+}
+
+.outer-wrap-footer {
+    background-color: rgba(71, 71, 71, 0.9);
+    color: seashell;
+    border-top: 2px solid #ffcba4;
+}
+
+.footer-column {
+    text-align: center;
+    margin-top: 15px;
+    width: 33%;
+    float: left;
+    font-family: "Archivo";
+}
+
+.footer-column p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer-column-x {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.region-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-footer {
+    text-align: center;
+}
+
+.byline {
+    clear: both;
+    margin-top: 1.5em;
+    font-family: "Archivo";
+    border-top: 2px solid #ffcba4;
 }
