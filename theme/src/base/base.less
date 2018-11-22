@@ -1,0 +1,55 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Muli|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #333;
+@fontcolor: #333;
+@fontFamilyBody: "Muli";
+@linearBackground: linear-gradient(to bottom, #fff, #ffcba4);
+
+
+html {
+    font-size: 100%;
+    font-family: @fontFamilyBody;
+    overflow-y: scroll;
+    color: @fontcolor;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    background-image: @linearBackground;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+@media (max-width 980px) {
+    body {
+        width: auto;
+        background-color: @bgColorBody;
+    }
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+form {
+    margin-bottom: 25px;
+    width: 980px;
+}
+
+img {
+    max-width: 100%;
+}

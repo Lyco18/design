@@ -1,0 +1,212 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+ /**
+  * header and top
+  */
+
+ .site-logo-text {
+     font-size: 2em;
+ }
+
+ .site-logo-text a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ .site-logo-text a:hover {
+     text-decoration: underline;
+ }
+
+ .region-header-col-1,
+ .region-header-col-3, {
+     width: 10%;
+     padding-top: 30px;
+     float: left;
+     font-family: "Playfair";
+ }
+
+ .region-header-col-2 {
+     width: 80%;
+     text-align: center;
+     padding-top: 10px;
+     font-family: "Muli";
+     float: left;
+ }
+
+ .my-navbar {
+     list-style-type: none;
+ }
+
+ .my-navbar li {
+     display: inline;
+     box-sizing: border-box;
+     padding: 0 1em;
+ }
+
+ .my-navbar li a {
+     color: #333;
+     text-decoration: none;
+     font-size: 24px;
+ }
+
+ .my-navbar li a:hover {
+     text-decoration: underline;
+ }
+
+/**
+ * General layout
+ */
+
+ .figure.right {
+     float: right;
+ }
+
+ .region-flash,
+ .inner-wrap-main {
+     background-color: rgba(255, 255, 255, 0.5);
+     width: auto;
+     max-width: 1100px;
+     margin: 0 auto;
+     padding: 8px;
+ }
+
+ .row::after {
+     content: "";
+     display: block;
+     clear: both;
+ }
+
+ .row-main {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+
+ /**
+  * left & right side bar
+  */
+
+ .block.toc li {
+     list-style-type: none;
+ }
+
+ .block.toc ul {
+     padding-left: 0;
+ }
+
+ .block.toc li a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ .block.toc li a:hover {
+     text-decoration: underline;
+ }
+
+ .region-breadcrumb li {
+     display: none;
+ }
+
+ .has-sidebar-right,
+ .region-sidebar-left {
+     width: 580px;
+     float: left;
+ }
+
+ .next-previous {
+     display: flex;
+     flex-direction: row-reverse;
+     padding: 4px 2em;
+ }
+
+ .next a,
+ .previous a {
+     text-decoration: none;
+     color: #333;
+     font-size: 18px;
+ }
+
+ .next a:hover,
+ .previous a:hover {
+     text-decoration: underline;
+ }
+
+ .previous {
+     margin-right: auto;
+ }
+
+ .wrap-sidebar {
+     box-sizing: border-box;
+     width: 30%;
+ }
+
+ .region-sidebar-right {
+     float: right;
+     margin-top: 20px;
+ }
+
+ .block {
+     margin-bottom: 3em;
+ }
+
+ .block h4 {
+     margin: 0;
+     border-bottom: 1px solid #ccc;
+ }
+
+ .block p {
+     margin-top: 3px;
+ }
+
+ /**
+  * footer and byline
+  */
+
+ .outer-wrap-footer {
+     background-color: rgba(71, 71, 71, 0.9);
+     color: seashell;
+     border-top: 2px solid #ffcba4;
+ }
+
+ .footer-column {
+     text-align: center;
+     margin-top: 15px;
+     width: 33%;
+     float: left;
+     font-family: "Muli";
+ }
+
+ .footer-column p {
+     text-align: center;
+     font-size: 1em;
+ }
+
+ .footer-column-x {
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+
+ .region-footer {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .site-footer {
+     text-align: center;
+ }
+
+ .byline {
+     clear: both;
+     margin-top: 1.5em;
+     font-family: "Muli";
+     border-top: 2px solid #ffcba4;
+ }
