@@ -1,10 +1,29 @@
 /*!
- * LESS version of the stylesheet for design kmom01.
+ * Stylesheet for design kmom03.
  *
- * This stylesheet is for the design course and kmom01. Its intention is to
- * use kmom01.css and lessify the style and use this as a wrapper for the new
- * style.
+ * This stylesheet is for the design course and kmom03 where we use LESS.
  */
+/**
+ * google fonts.
+ */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v13/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
+}
 /**
  * Normalize and reset the style.
  */
@@ -4317,6 +4336,38 @@ template {
   font-family: 'Font Awesome 5 Brands';
 }
 /**
+  * Import the vertical grid.
+  */
+/**
+ * Fluid and Responsive Vertical Grid
+ */
+/**
+ * Namespace what could be namespaced
+ */
+#desinax-vgrid {
+  /**
+     * Wrap grid in a container.
+     */
+  /**
+     * Show grid.
+     */
+  /**
+     * All columns must be wrapped in a row.
+     */
+  /**
+     * Create a column spanning @col columns.
+     */
+  /**
+     * Push a column @offset columns.
+     */
+  /**
+     * Pull a column left @offset columns.
+     */
+  /**
+     * Pull a column right @offset columns.
+     */
+}
+/**
  * Internal self contained modules, save in directory module/.
  */
 /*!
@@ -4325,24 +4376,6 @@ template {
  * This stylesheet is for the design course and kmom01. Fill it with style
  * to style up the website so it is useable.
  */
-@font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v13/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
-}
 /* Hide submenu, leave this to kmom02 */
 /* Hide responsive/mobile menu, leave this to kmom02 */
 /**
@@ -4362,7 +4395,7 @@ template {
  */
 html {
   font-size: 100%;
-  font-family: "Muli";
+  font-family: "Playfair";
   overflow-y: scroll;
   color: #333;
 }
@@ -4370,21 +4403,299 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #fff;
+  background-color: #424242;
   background-image: linear-gradient(to bottom, #fff, #ffcba4);
-  font: 100.01%/1 "Muli";
+  font: 16px/1.375 "Playfair";
 }
 @media (max-width 980px) {
   body {
     width: auto;
-    background-color: #fff;
+    background-color: #424242;
   }
 }
-p {
-  font-size: 1.2em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Muli";
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+  margin: 0;
+}
+h1 {
+  font-size: 2.375em;
+  line-height: 1.15789474;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 21px;
+}
+h1 ~ h1,
+h1 ~ h2,
+h1 ~ h3,
+h1 ~ h4,
+h1 ~ h5,
+h1 ~ h6 {
+  margin-top: 44px;
+}
+h1 + h2 {
+  margin-top: 22px;
+}
+h2 {
+  font-size: 1.875em;
+  line-height: 1.46666667;
+  font-weight: normal;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #CCC;
+}
+h2 + h3 {
+  margin-top: 22px;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.57142857;
+  font-weight: normal;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #EEE;
+}
+h3 + h4 {
+  margin-top: 22px;
 }
 h4 {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  line-height: 1.83333333;
+  font-weight: normal;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #EEE;
+}
+h4 + h5 {
+  margin-top: 22px;
+}
+h5 {
+  font-size: 1.25em;
+  line-height: 1.1;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #EEE;
+}
+h5 + h6 {
+  margin-top: 22px;
+}
+h6 {
+  font-size: 1.25em;
+  line-height: 1.1;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #EEE;
+}
+p {
+  margin-bottom: 22px;
+}
+small,
+.small,
+.smaller {
+  font-size: 0.875em;
+}
+strong,
+b {
+  font-weight: bold;
+}
+mark {
+  color: #000;
+  background-color: #ff9;
+}
+abbr[title],
+dfn[title] {
+  text-decoration: dotted underline;
+}
+em,
+i,
+dfn {
+  font-style: italic;
+}
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 22px;
+}
+pre,
+code,
+kbd,
+samp,
+.code {
+  font-family: "monospace";
+}
+code,
+samp {
+  border: 1px solid #ccc;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+code {
+  background-color: #eee;
+}
+pre,
+div.code,
+pre code {
+  font-size: 1em;
+  line-height: 1.5;
+  white-space: pre;
+}
+pre {
+  margin-bottom: 22px;
+}
+pre code {
+  display: block;
+  overflow: auto;
+}
+div.code,
+pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 21px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+ul,
+ol {
+  margin-bottom: 22px;
+  padding-left: 1.5em;
+}
+ul p,
+ol p {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 0;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+dl {
+  margin-bottom: 22px;
+}
+dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+dd {
+  margin-left: 1.5em;
+}
+article table,
+.table,
+.table1,
+.table2 {
+  margin-bottom: 22px;
+}
+table.full-width,
+article .table,
+.table,
+.table2 {
+  width: 100%;
+}
+article table,
+.table,
+.table2 {
+  border-collapse: collapse;
+  /*
+            tfoot {
+            }
+            */
+}
+article table caption,
+.table caption,
+.table2 caption {
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  text-align: left;
+  font-style: italic;
+}
+article table thead,
+.table thead,
+.table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+article table th,
+.table th,
+.table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+article table th,
+.table th,
+.table2 th,
+article table td,
+.table td,
+.table2 td {
+  padding: 5.5px;
+}
+article table tr,
+.table tr,
+.table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+article table tr:hover,
+.table tr:hover,
+.table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+table.striped tbody tr:nth-child(even) td,
+table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 32px;
+  margin-bottom: 33px;
+}
+hr::after {
+  content: "§";
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
 }
 form {
   margin-bottom: 25px;
@@ -4404,7 +4715,7 @@ img {
  * Variables
  */
 /**
-  * header and top inc. navbar
+  * header and navbar
   */
 .site-logo-text {
   font-size: 2em;
@@ -4418,17 +4729,22 @@ img {
 }
 .region-header-col-1,
 .region-header-col-3 {
-  width: 10%;
-  padding-top: 30px;
+  display: inline;
   float: left;
+  width: 15.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   font-family: "Playfair";
 }
 .region-header-col-2 {
-  width: 80%;
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   text-align: center;
   padding-top: 10px;
   font-family: "Muli";
-  float: left;
 }
 .my-navbar {
   list-style-type: none;
@@ -4436,7 +4752,7 @@ img {
 .my-navbar li {
   display: inline;
   box-sizing: border-box;
-  padding: 0 1em;
+  padding: 0 0.5em;
 }
 .my-navbar li a {
   color: #333;
@@ -4449,19 +4765,95 @@ img {
 /**
  * General layout
  */
-.figure.right {
-  float: right;
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+.inner-wrap-header,
+.inner-wrap-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+.region-flash,
+.inner-wrap-main {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.region-flash img {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.region-main {
+  display: inline;
+  float: left;
+  width: 73.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 13.02083333%;
+  margin-top: 0em;
+}
+.region-main.has-sidebar {
+  margin-left: 0.52083333%;
+  margin-top: -0.6em;
+}
+.region-main.has-sidebar-right {
+  display: inline;
+  float: left;
+  width: 69.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-top: 0.08em;
+}
+.region-sidebar-right,
+.region-sidebar-left {
+  margin-top: 1.4em;
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.region-sidebar-right {
+  margin-left: 4.6875%;
+}
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+  margin-bottom: 12px;
 }
 .row::after {
   content: "";
   display: block;
   clear: both;
 }
-.row-main {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 1100px) {
+  .vgrid .inner-wrap {
+    background-size: 1100px auto;
+  }
+}
+.vgrid .inner-wrap.inner-wrap-header,
+.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header,
+  .vgrid .inner-wrap.inner-wrap-footer {
+    background-size: 100% auto;
+  }
+}
+.figure.right {
+  float: right;
 }
 /**
   * left & right side bar
@@ -4482,12 +4874,12 @@ img {
 .region-breadcrumb li {
   display: none;
 }
-.has-sidebar-right,
-.region-sidebar-left {
-  width: 70%;
-  float: left;
-}
 .next-previous {
+  display: inline;
+  float: left;
+  width: 73.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   display: flex;
   flex-direction: row-reverse;
   padding: 4px 2em;
@@ -4504,15 +4896,6 @@ img {
 }
 .previous {
   margin-right: auto;
-}
-.wrap-sidebar {
-  box-sizing: border-box;
-  width: 30%;
-}
-.region-sidebar-right {
-  width: 28%;
-  float: right;
-  margin-top: 20px;
 }
 .block {
   margin-bottom: 3em;
@@ -4533,25 +4916,26 @@ img {
   border-top: 2px solid #ffcba4;
 }
 .footer-column {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   text-align: center;
   margin-top: 15px;
-  width: 33%;
-  float: left;
   font-family: "Muli";
+  margin-top: 1.2em;
 }
 .footer-column p {
   text-align: center;
   font-size: 1em;
 }
-.footer-column-x {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.region-footer {
-  display: flex;
-  flex-direction: column;
-}
 .site-footer {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   text-align: center;
 }
 .byline {
@@ -4598,6 +4982,48 @@ img {
   background-color: #b5dce1;
   border: 1px solid #6cbac4;
   color: #111;
+}
+/**
+ * Import the vertical grid.
+ */
+/**
+ * Import the typographic grid.
+ */
+/**
+ * Typographic font families to choose from.
+ */
+/**
+ * Typographic defaults.
+ */
+#desinax-hgrid {
+  /**
+     * Mixins used when setting default fonts
+     */
+  /**
+     * Settings for headings H1-H6
+     */
+  /**
+     * Text elements
+     */
+  /**
+     * Display source code.
+     */
+  /**
+     * Lists
+     */
+  /**
+     * Tables. Because of the need for padding on TH and TD, the vertical rhythm
+     * on table cells has to be 1.5*@magic-number.
+     */
+  /**
+     * More typography elements
+     */
+  /**
+     * Enable all default typographic elements.
+     */
+}
+.hgrid .inner-wrap {
+  background-image: url("../img/magic-number-22px.png");
 }
 /**
  * A responsive menu.
