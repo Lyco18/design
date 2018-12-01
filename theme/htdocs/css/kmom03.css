@@ -4395,7 +4395,7 @@ template {
  */
 html {
   font-size: 100%;
-  font-family: "Playfair";
+  font-family: "Playfair Display";
   overflow-y: scroll;
   color: #333;
 }
@@ -4403,9 +4403,10 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  letter-spacing: 0.5px;
   background-color: #424242;
   background-image: linear-gradient(to bottom, #fff, #ffcba4);
-  font: 16px/1.375 "Playfair";
+  font: 16px/1.375 "Playfair Display";
 }
 @media (max-width 980px) {
   body {
@@ -5262,36 +5263,36 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
   * Navbar
   */
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1380px) {
   .rm-desktop a {
     padding-left: 0.2em;
     padding-right: 0.2em;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1040px) {
   .rm-desktop a {
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 950px) {
   .rm-desktop li {
     padding-left: 0.2em;
     padding-right: 0.2em;
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 860px) {
   .rm-desktop li {
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 802px) {
   .rm-desktop {
     display: none;
   }
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 802px) {
   .rm-small {
     display: none;
   }
