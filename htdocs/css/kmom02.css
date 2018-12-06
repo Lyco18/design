@@ -311,6 +311,24 @@ template {
 [hidden] {
   display: none;
 }
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v13/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
+}
 /**
   * Font Awesome.
   */
@@ -4323,24 +4341,6 @@ template {
  * This stylesheet is for the design course and kmom01. Fill it with style
  * to style up the website so it is useable.
  */
-@font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v13/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
-}
 /* Hide submenu, leave this to kmom02 */
 /* Hide responsive/mobile menu, leave this to kmom02 */
 /**
@@ -4829,41 +4829,38 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Style for responsive menu
  */
 /**
-  * Example on media queries
-  */
-/**
   * Navbar
   */
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1720px) {
   .rm-desktop a {
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
   }
 }
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1045px) {
   .rm-desktop a {
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1001px) {
   .rm-desktop li {
     padding-left: 0.2em;
     padding-right: 0.2em;
   }
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 914px) {
   .rm-desktop li {
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 856px) {
   .rm-desktop {
     display: none;
   }
 }
-@media screen and (min-width: 802px) {
+@media screen and (min-width: 856px) {
   .rm-small {
     display: none;
   }

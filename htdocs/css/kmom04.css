@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * google fonts.
@@ -4856,6 +4856,9 @@ img {
 .figure.right {
   float: right;
 }
+.figure.hemsida a {
+  width: 200px;
+}
 /**
   * left & right side bar
   */
@@ -5258,38 +5261,41 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Style for responsive menu
  */
 /**
+  * Example on media queries
+  */
+/**
   * Navbar
   */
-@media screen and (max-width: 1720px) {
+@media screen and (max-width: 1380px) {
   .rm-desktop a {
-    padding-left: 0.1em;
-    padding-right: 0.1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
   }
 }
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1040px) {
   .rm-desktop a {
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media screen and (max-width: 1001px) {
+@media screen and (max-width: 950px) {
   .rm-desktop li {
     padding-left: 0.2em;
     padding-right: 0.2em;
   }
 }
-@media screen and (max-width: 914px) {
+@media screen and (max-width: 860px) {
   .rm-desktop li {
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media screen and (max-width: 856px) {
+@media screen and (max-width: 802px) {
   .rm-desktop {
     display: none;
   }
 }
-@media screen and (min-width: 856px) {
+@media screen and (min-width: 802px) {
   .rm-small {
     display: none;
   }

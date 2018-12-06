@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * google fonts.
@@ -23,6 +23,12 @@
   font-style: normal;
   font-weight: 400;
   src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
 }
 /**
  * Normalize and reset the style.
@@ -4395,18 +4401,21 @@ template {
  */
 html {
   font-size: 100%;
-  font-family: "Playfair Display";
+  font-family: verdana;
   overflow-y: scroll;
   color: #333;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #1629FF;
   letter-spacing: 0.5px;
   background-color: #424242;
-  background-image: linear-gradient(to bottom, #fff, #ffcba4);
-  font: 16px/1.375 "Playfair Display";
+  background-image: linear-gradient(to left, #d94be8, #ffed12);
+  font: 16px/1.375 verdana;
+}
+li {
+  color: #1629FF;
 }
 @media (max-width 980px) {
   body {
@@ -4420,7 +4429,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Muli";
+  font-family: "Merriweather";
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -4704,6 +4713,9 @@ form {
 img {
   max-width: 100%;
 }
+a:hover {
+  color: #1629FF;
+}
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
@@ -4727,6 +4739,7 @@ img {
 }
 .site-logo-text a:hover {
   text-decoration: underline;
+  color: #1629FF;
 }
 .region-header-col-1,
 .region-header-col-3 {
@@ -4745,7 +4758,7 @@ img {
   margin-right: 0.52083333%;
   text-align: center;
   padding-top: 10px;
-  font-family: "Muli";
+  font-family: "Merriweather";
 }
 .my-navbar {
   list-style-type: none;
@@ -4762,6 +4775,7 @@ img {
 }
 .my-navbar li a:hover {
   text-decoration: underline;
+  color: #1629FF;
 }
 /**
  * General layout
@@ -4856,6 +4870,9 @@ img {
 .figure.right {
   float: right;
 }
+.figure.hemsida a {
+  width: 200px;
+}
 /**
   * left & right side bar
   */
@@ -4871,6 +4888,7 @@ img {
 }
 .block.toc li a:hover {
   text-decoration: underline;
+  color: #1629FF;
 }
 .region-breadcrumb li {
   display: none;
@@ -4894,6 +4912,7 @@ img {
 .next a:hover,
 .previous a:hover {
   text-decoration: underline;
+  color: #1629FF;
 }
 .previous {
   margin-right: auto;
@@ -4912,9 +4931,9 @@ img {
   * footer and byline
   */
 .outer-wrap-footer {
-  background-color: rgba(71, 71, 71, 0.9);
-  color: seashell;
-  border-top: 2px solid #ffcba4;
+  background-color: #d94be8;
+  color: #ffed12;
+  border-top: 2px solid #1629FF;
 }
 .footer-column {
   display: inline;
@@ -4924,7 +4943,7 @@ img {
   margin-right: 0.52083333%;
   text-align: center;
   margin-top: 15px;
-  font-family: "Muli";
+  font-family: "Merriweather";
   margin-top: 1.2em;
 }
 .footer-column p {
@@ -4943,7 +4962,7 @@ img {
   clear: both;
   margin-top: 1.5em;
   font-family: "Muli";
-  border-top: 2px solid #ffcba4;
+  border-top: 2px solid #1629FF;
 }
 /**
  * Layout for responsive style through media queries.

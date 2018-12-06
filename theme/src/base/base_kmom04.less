@@ -4,10 +4,10 @@
 
 
 @bgColorHtml: #424242;
-@bgColorBody: #fff;
+@bgColorBody: #424242;
 @colorBody: #333;
 @fontcolor: #333;
-@fontFamilyBody: "Muli";
+@fontFamilyBody:    "Playfair";
 @linearBackground: linear-gradient(to bottom, #fff, #ffcba4);
 
 
@@ -22,9 +22,15 @@ body {
     margin: 0;
     padding: 0;
     color: @colorBody;
+    letter-spacing: 0.5px;
     background-color: @bgColorBody;
     background-image: @linearBackground;
-    font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
+    //font: 100.01%/1 @fontFamilyBody;
+}
+
+li {
+    color: @colorBody;
 }
 
 @media (max-width 980px) {
@@ -34,13 +40,16 @@ body {
     }
 }
 
-p {
-    font-size: 1.2em;
-}
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
 
-h4 {
-    font-size: 1.2em;
-}
+// p {
+//     font-size: 1.2em;
+// }
+//
+// h4 {
+//     font-size: 1.2em;
+// }
 
 form {
     margin-bottom: 25px;
@@ -49,4 +58,8 @@ form {
 
 img {
     max-width: 100%;
+}
+
+a:hover {
+    color: @hoverNavColor;
 }

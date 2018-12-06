@@ -49,9 +49,9 @@ return [
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
         [
-            "text" => "Test",
-            "url" => "test",
-            "title" => "Test sida",
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapport",
         ],
     ],
 ];
