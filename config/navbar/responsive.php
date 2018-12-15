@@ -64,5 +64,10 @@ return [
             "url" => "rapporter",
             "title" => "Rapporter",
         ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapport",
+        ],
     ],
 ];
