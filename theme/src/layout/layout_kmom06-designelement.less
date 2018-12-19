@@ -1,0 +1,272 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+@fontFamilyHeadings: "Muli";
+@borderColor: #ffcba4;
+@footerFontColor: seashell;
+@footerbgColor: rgba(71, 71, 71, 0.9);
+@hoverNavColor: #333;
+
+ /**
+  * header and navbar
+  */
+
+ .site-logo-text {
+     font-size: 2em;
+ }
+
+ .site-logo-text a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ .site-logo-text a:hover {
+     text-decoration: underline;
+     color: @hoverNavColor;
+ }
+
+ .region-header-col-1,
+ .region-header-col-3, {
+     #desinax-vgrid.column(4);
+     font-family: "Playfair";
+ }
+
+ .region-header-col-2 {
+     //width: 80%;
+     #desinax-vgrid.column(16);
+     text-align: center;
+     padding-top: 10px;
+     font-family: @fontFamilyHeadings;
+     //float: left;
+ }
+
+ .my-navbar {
+     list-style-type: none;
+ }
+
+ .my-navbar li {
+     display: inline;
+     box-sizing: border-box;
+     padding: 0 0.5em;
+ }
+
+ .my-navbar li a {
+     color: #333;
+     text-decoration: none;
+     font-size: 24px;
+ }
+
+ .my-navbar li a:hover {
+     text-decoration: underline;
+     color: @hoverNavColor;
+ }
+
+/**
+ * General layout
+ */
+
+ .inner-wrap {
+     #desinax-vgrid.grid(1100px);
+ }
+
+ .inner-wrap-header,
+ .inner-wrap-footer {
+     #desinax-vgrid.grid(100%);
+  }
+
+ .inner-wrap-main {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 4px 20px 8px rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    //width: 100%;
+    //max-width: 1100px;
+    //margin: 0 auto;
+    //padding: 8px;
+ }
+
+ .region-flash img {
+     #desinax-vgrid.column(24);
+ }
+
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(3);
+    margin-top: 0em;
+
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+        margin-top: -0.6em;
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+        margin-top: 0.08em;
+    }
+    //overflow: auto;
+}
+
+.region-sidebar-right,
+.region-sidebar-left {
+    margin-top: 1.4em;
+    #desinax-vgrid.column(@columns * 1 / 4);
+    //width: 28%;
+    //float: right;
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+}
+
+ .row {
+    #desinax-vgrid.row();
+
+    margin-bottom: 12px;
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+ .figure.right {
+     margin-top: 35px;
+     float: right;
+ }
+
+ // .row::after {
+ //     content: "";
+ //     display: block;
+ //     clear: both;
+ // }
+
+ // .row-main {
+ //     display: flex;
+ //     flex-direction: row;
+ //     align-items: center;
+ //     justify-content: center;
+ // }
+
+ /**
+  * left & right side bar
+  */
+
+ .block.toc li {
+     list-style-type: none;
+ }
+
+ .block.toc ul {
+     padding-left: 0;
+ }
+
+ .block.toc li a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ .block.toc li a:hover {
+     text-decoration: underline;
+     color: @hoverNavColor;
+ }
+
+ .region-breadcrumb li {
+     display: none;
+ }
+
+ .next-previous {
+     #desinax-vgrid.column(18);
+     display: flex;
+     flex-direction: row-reverse;
+     padding: 4px 2em;
+ }
+
+ .next a,
+ .previous a {
+     text-decoration: none;
+     color: #333;
+     font-size: 18px;
+ }
+
+ .next a:hover,
+ .previous a:hover {
+     text-decoration: underline;
+     color: @hoverNavColor;
+ }
+
+ .previous {
+     margin-right: auto;
+ }
+
+ .block {
+     margin-bottom: 3em;
+ }
+
+ .block h4 {
+     margin: 0;
+     border-bottom: 1px solid #ccc;
+ }
+
+ .block p {
+     margin-top: 3px;
+ }
+
+ .figure.hemsida {
+     margin: 0;
+ }
+
+ /**
+  * footer and byline
+  */
+
+ .outer-wrap-footer {
+     background-color: @footerbgColor;
+     color: @footerFontColor;
+     border-top: 2px solid @borderColor;
+ }
+
+ .footer-column {
+     #desinax-vgrid.column(@columns / 3);
+     text-align: center;
+     margin-top: 15px;
+     //width: 33%;
+     //float: left;
+     font-family: @fontFamilyHeadings;
+     margin-top: 1.2em;
+ }
+
+ .footer-column p {
+     text-align: center;
+     font-size: 1em;
+ }
+
+ .footer-column-x {
+     //margin-left: 20px;
+     //margin-right: 20px;
+ }
+
+ .region-footer {
+     //display: flex;
+     //flex-direction: column;
+ }
+
+ .site-footer {
+     #desinax-vgrid.column(@columns);
+     text-align: center;
+ }
+
+ .byline {
+     clear: both;
+     margin-top: 1.5em;
+     font-family: "Muli";
+     border-top: 2px solid @borderColor;
+ }
