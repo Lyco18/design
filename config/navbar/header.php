@@ -44,19 +44,14 @@ return [
             "title" => "Välj stylesheet.",
         ],
         [
-            "text" => "Verktyg",
-            "url" => "verktyg",
-            "title" => "Verktyg och möjligheter för utveckling.",
+            "text" => "Blogg",
+            "url" => "blog",
+            "title" => "Blogg",
         ],
         [
             "text" => "Rapport",
             "url" => "rapport",
-            "title" => "Rapport",
-        ],
-        [
-            "text" => "Blogg",
-            "url" => "blogg",
-            "title" => "Blogg",
+            "title" => "Rapporter",
         ],
     ],
 ];

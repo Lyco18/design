@@ -3,4 +3,4 @@
 Redovisningstexter
 =========================
 
-Här till vänster kan du navigera runt dig i mina Redovisningstexter. Där kommer du hitta tips och tricks om kursmomenten och vad jag har lärt mig under kursens gång. 
+Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/redovisning/00_index.md`.

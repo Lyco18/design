@@ -1,3 +1,3 @@
-#### Om Dbwebb
+#### Footer col 1
 
-Dbwebb är en hemsida skapad för i undervisande syfte för att lära ut programmering i en webbmiljö, webbprogramering och webbutveckling. Här finns allt undervisnings material för studenter som studerar på Blekinges Tekniska Högskola.  
+Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.

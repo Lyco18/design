@@ -4,7 +4,7 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta:
+            meta: 
                 type: single
                 route: block/om-kursrepo
 
@@ -12,13 +12,17 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta:
+            meta: 
                 type: single
                 route: block/om-redovisa
 ---
 Om
 =========================
 
-Det här är en sida skapad av DBWEBB i samband med kursen design på Blekinge Tekniska Högskola. Ni hittar kursen på <a href="https://dbwebb.se/kurser/design-v2">dbwebbs hemsida.</a>
+Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
 
-Den här sidan är skapad i ett lärande syfte och som ett test objekt för studenter på bth. 
+Skriv några kloka ord om kursen?
+
+Lägg till en representativ bild för kursen, enligt ditt egna val.
+
+[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
